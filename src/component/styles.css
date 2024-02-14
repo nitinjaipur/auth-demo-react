@@ -1,0 +1,33 @@
+label, input {
+  display: inline-block;
+}
+
+label {
+  width: 30%;
+  text-align: right;
+}
+
+label+input {
+  width: 50%;
+  margin: 0 0 0 4%;
+}
+
+.formContainer {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  min-height: 30vh;
+  min-width: 50vw;
+  border: 2px solid black;
+}
+
+.formDiv {
+  min-width: 30vw;
+  margin-top: 20px;
+}
+
+.submitDiv {
+  margin-left: 34%;
+  margin-top: 20px;
+}
+

@@ -1,0 +1,18 @@
+  .main {
+    align-items: center;
+    justify-content: center;
+    background-color: teal;
+    display: flex;
+    min-height: 100vh;
+  }
+
+  .formContainer {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    min-height: 30vh;
+    min-width: 50vw;
+    border: 2px solid black;
+  }
+
+  
