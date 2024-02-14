@@ -5,21 +5,27 @@ export const userSlice = createSlice({
     initialState: {
         name: '',
         email: '',
-        age: 0,
-        gender: '',
+        phoneNumber: 0,
+        emailVerified: false,
+        photoURL: '',
+        uid: '',
     },
     reducers: {
         setUser: (state, action) => {
-            state.name = action.name,
-            state.email = action.email,
-            state.age = action.age,
-            state.gender = action.gender
+            state.name = action?.payload?.name
+            state.email = action?.payload?.email
+            state.phoneNumber = action?.payload?.age
+            state.emailVerified = action?.payload?.gender
+            state.photoURL = action?.payload?.photoURL
+            state.uid = action?.payload?.uid
         },
-        removeUser: (state, action) => {
-            state.name = '',
-            state.email = '',
-            state.age = 0,
-            state.gender = ''
+        removeUser: (state) => {
+            state.name = ''
+            state.email = ''
+            state.phoneNumber = 0 
+            state.emailVerified = false 
+            state.photoURL = ''
+            state.uid = ''
         },
     }
 });

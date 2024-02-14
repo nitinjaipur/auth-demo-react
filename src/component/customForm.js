@@ -7,16 +7,19 @@ import { collection, addDoc, getDocs } from "firebase/firestore";
 const CustomForm = ({ handleOnSubmit, data }) => {
 
     const CustomField = ({data, onSubmit}) => {
-        const [state, setState] = useState({});
+        const [state, setState] = useState({
+            Gender: "Male",
+        });
     
         const handleChangeState = (event) => {
             setState((prev) => ({...prev, [event.target.name]: event.target.value}));
         }
 
         const handleSubmit = (e) => {
-            onSubmit(e, state.Email, state.Password);
+            onSubmit(e, state);
             setState({});
         }
+
         
         return(
             <>
@@ -25,7 +28,18 @@ const CustomForm = ({ handleOnSubmit, data }) => {
                         (item) => (
                                 <div className="formDiv" key={item?.label}>
                                     <label>{item?.label}</label>
-                                    <input name={item?.label} onChange={handleChangeState} value={state[item?.label] || ''} type={item?.type} ></input>
+                                    {
+                                        item?.type != 'select' ?
+                                        <input name={item?.label} onChange={handleChangeState} value={state[item?.label] || ''} type={item?.type} ></input>
+                                        :
+                                        <select name={item?.label} onChange={handleChangeState}>
+                                            {
+                                                item?.options.map(
+                                                    (choice) => <option value={choice} key={choice} >{choice}</option>
+                                                )
+                                            }
+                                        </select>
+                                    }
                                 </div>
                         )
                     )
@@ -70,14 +84,14 @@ const CustomForm = ({ handleOnSubmit, data }) => {
         });
     }
 
-    const onSubmitForm = (event, email, password) => {
+    const onSubmitForm = (event, data) => {
         event.preventDefault();
-        handleOnSubmit(email, password);
+        handleOnSubmit(data);
     }
 
     return(
         <form>
-            <CustomField data={data} onSubmit={(event, email, password) => onSubmitForm(event, email, password)} />
+            <CustomField data={data} onSubmit={(event, data) => onSubmitForm(event, data)} />
         </form>
     )
 }

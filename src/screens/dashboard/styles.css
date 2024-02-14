@@ -1,0 +1,29 @@
+.countainer {
+    /* align-items: center; */
+    justify-content: center;
+    background-color: teal;
+    display: flex;
+    min-height: 100vh;
+  }
+
+  .dataBox {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    min-height: 30vh;
+    width: 50vw;
+    /* border: 2px solid black; */
+  }
+
+  .data {
+    /* height: 20px; */
+    /* width: 20px; */
+    /* background-color: blueviolet; */
+    margin-top: 10px;
+    display: flex;
+    /* flex-direction: column; */
+    flex-direction: row;
+  }
+
+  

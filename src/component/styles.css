@@ -12,6 +12,11 @@ label+input {
   margin: 0 0 0 4%;
 }
 
+label+select {
+  /* width: 50%; */
+  margin: 0 0 0 4%;
+}
+
 .formContainer {
   justify-content: center;
   align-items: center;
