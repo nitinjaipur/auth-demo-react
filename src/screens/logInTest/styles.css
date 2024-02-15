@@ -1,0 +1,105 @@
+  .main {
+    align-items: center;
+    justify-content: center;
+    background-color: teal;
+    display: flex;
+    min-height: 100vh;
+    padding-left: 10vw;
+    padding-right: 10vw;
+    padding-top: 5vh;
+    padding-bottom: 5vh;
+  }
+
+  .body {
+    display: flex;
+    flex-direction: row;
+    height: 100vh;
+    width: 100vw;
+  }
+  
+  .leftDiv {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 50%;
+    /* background-color: aliceblue; */
+     background-color:thistle;
+  }
+
+  .leftDivHead {
+    display: flex;
+    flex-direction: column;
+    /* background-color: brown; */
+    width: 100%;
+    height: 30%;
+    justify-content: space-around;
+    align-items: center;
+    padding: 5% 0 0 10%;
+  }
+
+  .leftDivHeadMain {
+    display: flex;
+    /* flex-direction: row; */
+  }
+
+  .leftDivHeadImage {
+    display: flex;
+    background-color: yellowgreen;
+    width: 2vw;
+    height: 2vh;
+    border-radius: 1vh;
+    /* width: 20%;
+    height: 20%; */
+    margin: 0 1% 0 0;
+  }
+
+  .leftDivHeadText {
+    font-size: large;
+  }
+
+  .welcomeText {
+    font-size: xx-large;
+  }
+
+  .leftDivBody {
+    display: flex;
+    background-color:thistle;
+    width: 100%;
+    /* height: 65%; */
+    justify-content: center;
+    margin: 20% 0 0 0;
+  }
+
+
+
+
+  .rightDiv {
+    display: flex;
+    height: 100%;
+    width: 50%;
+    background-color: antiquewhite;
+    padding-top: 5vh;
+    padding-right: 3vw;
+  }
+
+  .rightDivTop {
+    height: 20%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+
+  .rightDivTopDetails {
+    /* min-height: 20%; */
+    width: 40%;
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+    text-align: end;
+  }
+
+  .rightDivTopDetailsButton{
+    border: 2px solid black;
+    padding: 1px;
+    margin: 1% 0 0 0;
+  }

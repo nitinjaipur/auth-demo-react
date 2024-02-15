@@ -15,30 +15,30 @@
   min-height: 100vh;
 }
 
-label, input {
+/* label, input {
   display: inline-block;
-}
+} */
 
-label {
+/* label {
   width: 30%;
   text-align: right;
-}
+} */
 
-label+input {
+/* label+input {
   width: 50%;
   margin: 0 0 0 4%;
-}
+} */
 
-.formContainer {
+/* .formContainer {
   justify-content: center;
   align-items: center;
   display: flex;
   min-height: 30vh;
   min-width: 50vw;
   border: 2px solid black;
-}
+} */
 
-.formDiv {
+/* .formDiv {
   min-width: 30vw;
   margin-top: 20px;
 }
@@ -46,7 +46,7 @@ label+input {
 .submitDiv {
   margin-left: 34%;
   margin-top: 20px;
-}
+} */
 
 
 
