@@ -1,3 +1,19 @@
+.topLineDiv {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.topLine {
+  flex: 1;
+  height: 2px;
+  background-color: #A9A9A9;
+  border: none;
+}
+
+.topLineText {
+  margin: 0 1%;
+}
 
 #formContainer {
   display: flex;

@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import './testStyles.css';
+import { auth } from "../firebase/firebase";
 
 const TestForm = ({ handleOnSubmit, data }) => {
 
@@ -19,6 +20,11 @@ const TestForm = ({ handleOnSubmit, data }) => {
 
         return(
             <>
+            <div className="topLineDiv">
+                <hr className="topLine"/>
+                <text className="topLineText">Login with Email</text>
+                <hr className="topLine"/>
+            </div>
                 {
                     data.map((item) => (
                         <div className="inputContainer">

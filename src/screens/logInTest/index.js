@@ -66,18 +66,11 @@ function LogInTest() {
             <text className="welcomeText">WELCOME BACK</text>
           </div>
 
-
           <div className="leftDivBody">
             <TestForm data={formFieldData} />
           </div>
         </div>
         
-
-
-
-
-
-
         <div className="rightDiv">
           <div className="rightDivTop" >
             <text>React App</text>
@@ -89,6 +82,11 @@ function LogInTest() {
         </div>
       </div>
     </div>
+
+    
+    // <div className="bg-violet-500">
+
+    // </div>
   );
 }
 
